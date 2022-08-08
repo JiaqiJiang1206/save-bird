@@ -63,7 +63,7 @@ function setup() {
 	 createCanvas(840, 480);
 	// background(0);
 	
-	 socket = io.connect('http://5386w319o8.qicp.vip');
+	 //socket = io.connect('http://5386w319o8.qicp.vip');
 	 rectMode(CORNERS)
 	 video = createCapture(VIDEO);
 	 video.size(640, 480);
