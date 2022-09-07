@@ -7,16 +7,22 @@ const app = express();
 
 let clients = 0;
 
-app.use(cors())
-app.use(function (req, res, next) {
+// app.use(cors())
+// app.use(function (req, res, next) {
 
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    next();
-});
+//     res.setHeader('Access-Control-Allow-Origin', '*');
+//     next();
+// });
 
-const server = app.listen(80, () => {
-    console.log("My socket server is running");
-  })
+// const server = app.listen(80, () => {
+//     console.log("My socket server is running");
+//   })
+
+var PORT = process.env.PORT || 3000;
+
+const server = app.listen(PORT, () => {
+  console.log("My socket server is running");
+})
 
 function listen() {
     const host = server.address().address;
